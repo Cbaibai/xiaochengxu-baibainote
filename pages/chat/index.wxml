@@ -1,0 +1,33 @@
+<!--pages/RichText/index.wxml-->
+<view class='container'>
+  <view class='chatPanel'>
+    <block wx:for="{{ msgList }}" wx:key="">
+      <view class="msg-container">
+        <text class="msg">{{ item.msg }}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="inputPanel">
+    <view class='inputRow'>
+      <input type="text" maxlength="240" placeholder="评论点什么：" placeholder-class='inputPLaceHolder' value='{{ showContent }}' bindinput="inputFocus" />
+      <view class="emojiPanelToggle" catchTap="emojiPanelToggle">
+        <image src="/emojis/0.gif" bindtap='emojiTap' style="width:60rpx;height:60rpx;" />
+      </view>
+      <button bindtap="send">发送</button>
+    </view>
+
+  <view class="{{ isShow ? 'emoji-move-in' : 'emoji-move-out' }}">
+    <view class="line"></view>
+    <view class="emojiPanel">
+      <block wx:for="{{ emojiChar }}" wx:key="">
+        <view class="emoji-cell" >
+          <image data-id="{{ index }}" bindtap='emojiChoosed' src='/emojis/{{index}}.gif'  style="width:50rpx;height:50rpx;" />
+        </view>
+      </block>
+    </view>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>
+

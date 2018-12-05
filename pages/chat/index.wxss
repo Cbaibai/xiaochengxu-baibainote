@@ -1,0 +1,151 @@
+viewvv/* pages/RichText/index.wxss */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.inputPanel {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%;
+}
+
+.inputRow {
+  margin: 0 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  background-color: white;
+}
+
+input {
+  margin: 20rpx 20rpx 20rpx 40rpx;
+  padding: 10rpx;
+  background-color: #dde;
+  border-radius: 5rpx;
+  height: 30rpx;
+  width: 400rpx;
+}
+
+.inputPLaceHolder {
+  font-size: 30rpx;
+  line-height: 20rpx;
+  margin-left: 10rpx;
+}
+
+button {
+  width: 120rpx;
+  height: 80rpx;
+  background-color: rgb(139, 216, 39);
+  margin: 20rpx 10rpx 30rpx 20rpx;
+  font-size: 11px;
+  color: white;
+  line-height: 80rpx;
+}
+
+.line {
+  height: 4rpx;
+  width: 600rpx;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+.emojiPanelToggle{
+    margin-top: 30rpx;
+}
+
+.emojiPanel {
+  width: 600rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  padding: 20rpx;
+  overflow: scroll;
+}
+
+.emojiPanel::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.emojiPanel::-webkit-scrollbar-thumb {
+    border-radius: 5rpx;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
+}
+.emojiPanel::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5rpx;
+    background: rgba(0,0,0,0.1);
+}
+
+.emoji-cell {
+  padding: 4rpx;
+  margin: 5rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+/*.emoji-cell:after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0
+}*/
+
+.emoji-cell:hover {
+  background-color: #ccc;
+}
+
+.emoji-move-in {
+  display: none;
+}
+
+.emoji-move-out {
+  display: block;
+}
+
+.chatPanel {
+  max-height: 600rpx;
+	margin: 20px 0;
+	padding: 0 10px;
+  width: 80%;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.chatPanel::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.chatPanel::-webkit-scrollbar-thumb {
+    border-radius: 5rpx;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
+}
+.chatPanel::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5rpx;
+    background: rgba(0,0,0,0.1);
+}
+
+.msg-container {
+  width: auto;
+  height: auto;
+  overflow-wrap: break-word;
+  word-wrap:break-word;
+  background-color: #ccc;
+  border-radius: 16rpx;
+  margin: 20rpx 0;
+}
+
+.msg {
+  padding: 10rpx;
+  /* background-color: #ccc; */
+	font-size:13px;
+	letter-spacing: 1px;
+}
+
+

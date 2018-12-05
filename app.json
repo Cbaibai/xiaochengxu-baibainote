@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/Graphics/index/index",
+    "pages/chat/index",
+    "pages/RichText/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "摆摆笔记",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#309090",
+    "borderStyle": "white",
+    "backgroundColor": "#ddd",
+    "list": [
+      {
+        "pagePath": "pages/Graphics/index/index",
+        "iconPath": "images/tab/Graphics.png",
+        "selectedIconPath": "images/tab/Graphics-selected.png",
+        "text": "Graphic"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "iconPath": "images/tab/chat.png",
+        "selectedIconPath": "images/tab/chat-selected.png",
+        "text": "chat"
+      }, {
+        "pagePath": "pages/RichText/index",
+        "iconPath": "images/tab/RichText.png",
+        "selectedIconPath": "images/tab/RichText-selected.png",
+        "text": "RichText"
+      }
+    ]
+  }
+}
