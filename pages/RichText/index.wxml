@@ -1,2 +1,9 @@
 <!--pages/RichText/index.wxml-->
-<view>12</view>
+<view class='scan'>
+  <input class='input' placeholder='扫一扫结果' value="{{ scanResult }}" />
+  <button bindtap='scan'>扫一扫</button>
+</view>
+
+<view class='toast'>
+  <button type="primary" bindtap="toast" style='width: 70%;'>显示toast</button>
+</view>

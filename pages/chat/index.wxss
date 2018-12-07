@@ -44,12 +44,14 @@ button {
   line-height: 80rpx;
 }
 
-.line {
-  height: 4rpx;
-  width: 600rpx;
-  background-color: #ccc;
-  margin: 0 auto;
-}
+/*
+  .line {
+    height: 4rpx;
+    width: 620rpx;
+    background-color: #ccc;
+    margin-left: 15rpx;
+  }
+*/
 
 .emojiPanelToggle{
     margin-top: 30rpx;
@@ -100,10 +102,12 @@ button {
 }
 
 .emoji-move-in {
+  width: inherit;
   display: none;
 }
 
 .emoji-move-out {
+  width: inherit;
   display: block;
 }
 

@@ -1,1 +1,11 @@
 /* pages/RichText/index.wxss */
+.scan {
+  width: 80%;
+  height: 400rpx;
+  margin: 20rpx auto;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+}

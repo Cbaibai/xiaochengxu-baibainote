@@ -17,17 +17,13 @@
       <button bindtap="send">发送</button>
     </view>
 
-  <view class="{{ isShow ? 'emoji-move-in' : 'emoji-move-out' }}">
-    <view class="line"></view>
-    <view class="emojiPanel">
+    <view class="emojiPanel {{ isShow ? 'emoji-move-in' : 'emoji-move-out' }}">
       <block wx:for="{{ emojiChar }}" wx:key="">
         <view class="emoji-cell" >
           <image data-id="{{ index }}" bindtap='emojiChoosed' src='/emojis/{{index}}.gif'  style="width:50rpx;height:50rpx;" />
         </view>
       </block>
     </view>
-    </view>
-    <view class="line"></view>
   </view>
 </view>
 

@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/Graphics/index/index",
     "pages/chat/index",
     "pages/RichText/index"
   ],
@@ -18,12 +17,6 @@
     "borderStyle": "white",
     "backgroundColor": "#ddd",
     "list": [
-      {
-        "pagePath": "pages/Graphics/index/index",
-        "iconPath": "images/tab/Graphics.png",
-        "selectedIconPath": "images/tab/Graphics-selected.png",
-        "text": "Graphic"
-      },
       {
         "pagePath": "pages/chat/index",
         "iconPath": "images/tab/chat.png",
