@@ -4,9 +4,11 @@
     <block wx:for="{{ msgList }}" wx:key="">
       <view class="msg-container">
         <text class="msg">{{ item.msg }}</text>
+        <image src="/emojis/10.gif" bindtap='emojiTap' style="width:60rpx;height:60rpx;" />
       </view>
     </block>
   </view>
+
 
   <view class="inputPanel">
     <view class='inputRow'>
